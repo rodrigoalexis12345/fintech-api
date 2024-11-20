@@ -27,11 +27,11 @@ import {
 
 //Usuarios
 import {
-  getAllUsuarios,
-  getUsuarioById,
   createUsuario,
   deleteUsuario,
-  updateUsuario
+  getAllUsuarios,
+  getUsuarioById,
+  updateUsuario,
 } from "../controllers/usuarios.controller.js";
 //Usuarios
 const router = Router();
@@ -44,16 +44,12 @@ router.put("/colaboraciones/:id", updateColaboracion);
 
 // Ruta para obtener todos los eventos
 router.get("/eventos", getAllEventos);
-
 // Ruta para obtener un evento por ID
 router.get("/eventos/:id", getEventoById);
-
 // Ruta para crear un nuevo evento
 router.post("/eventos", createEvento);
-
 // Ruta para eliminar un evento por ID
 router.delete("/eventos/:id", deleteEvento);
-
 // Ruta para actualizar un evento por ID
 router.put("/eventos/:id", updateEvento);
 
@@ -64,7 +60,6 @@ router.post("/proyectos", createProyecto);
 router.delete("/proyectos/:id", deleteProyecto);
 router.put("/proyectos/:id", updateProyecto);
 //proyectos
-
 
 //usuarios
 router.get("/usuarios", getAllUsuarios);
